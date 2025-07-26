@@ -73,7 +73,13 @@ export class PokemonService {
       throw new BadRequestException(`No se encontro el pokemon con id ${id}`);
     }
 
-    return;
+    return 'Deleted';
+  }
+
+  async removeAll() {
+    await this.pokemonModel.deleteMany();
+
+    return 'Deleted All';
   }
 
   private handleExeptions(error: any) {
