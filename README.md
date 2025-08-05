@@ -1,4 +1,4 @@
-<p align="center">
+<p style="text-align: center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
@@ -37,6 +37,16 @@ pnpm start:dev
 
 ```
 GET {{API_URI}}/seed
+```
+
+# Production Build
+
+1. Crear el archivo **.env.prod**
+2. Llenar las variables del entorno de produccion
+3. Crear la nueva imagen
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
 ```
 
 ## Stack Usado

@@ -1,0 +1,12 @@
+dist/
+node_modules/
+mongo/
+.git/
+
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+.DS_Store
+.gitignore
+.env.template
